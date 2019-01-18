@@ -6,5 +6,5 @@ add_executable(hello hello.cpp)
 add_executable(version version.cpp)
 
 add_executable(cur_time_boost cur_time_boost.cpp)
-target_include_directories(cur_time_boost PRIVATE ${Boost_INCLUDE_DIRS})
+target_include_directories(cur_time_boost SYSTEM PRIVATE ${Boost_INCLUDE_DIRS})
 target_link_libraries(cur_time_boost ${Boost_DATE_TIME_LIBRARY})
